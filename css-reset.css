@@ -137,3 +137,8 @@ img {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+
+h1, h2, h3, h4, h5, h6, p, span {
+  font-weight: unset;
+  font-size: unset;
+}
