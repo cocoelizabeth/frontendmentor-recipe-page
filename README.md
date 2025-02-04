@@ -48,31 +48,31 @@ Ideas to test yourself:
 
 ### What I learned
 
-I learned how to create custom list styling for both ordered and unordered lists. I used CSS counters for the custom number styling. and I learned how to use CSS counters for creating custom. I created a reusable class for the custom lists custom list style based on the figma design that allowed and I learned about the css-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Through this project, I gained a lot of experience in creating customized list styles using CSS, and specifically by leveraging CSS counters for ordered lists. Since all of the lists in the project (Preparation time, Ingredients, and Instructions) had many properties in common (i.e. layout, size, padding, etc), I was able to structure the HTML lists uniformly and apply a custom, reusable class style to all lists. 
 
+**Implementation of Custom List Styles**
+Since all of the lists in the project (Preparation time, Ingredients, and Instructions) had many properties in common (i.e. consistent typography, layout, size, padding, etc), I created a reusable class, `.list`, that I applied to all `<ol>` and `<ul>` list elements within the project.
 
-Since all of the bulleted lists and numbered lists in the design had similar spacing and layout, I was able to reuse the same `<li>` structure for each list item:
+Here's how the HTML structure was standardized:
+
 
 ```html
 <!-- For numbered lists -->
 <ol class="list custom-ol">
-  <li class="text-preset-4 m-b-100">
-    <span>List Item Text</span>
-  </li>
-  <!-- etc. -->
+  <li class="text-preset-4 m-b-100"><span>List Item Text</span></li>
+  <!-- Additional list items -->
 </ol>
 
 <!-- For bulleted lists -->
 <ul class="list custom-ul">
-  <li class="text-preset-4 m-b-100">
-    <span>List Item Text</span>
-  </li>
+  <li class="text-preset-4 m-b-100"><span>List Item Text</span></li>
   <!-- etc. -->
 </ul>
 ```
-Then I created a reusable `.list` class that I applied to all of the lists (Preparation time, Ingredients, and Instructions). (whether they were ordered or unordered). This contained all of the styling rules that they each shared.
+
+In my CSS, I removed default list styling in my `css-reset.css`, and the `.list` class that I created in my `styles.css` defined the consistent base styles for all lists.
 ```css
+/* styles.css */
 .list {
     margin: 0;
     padding: 0;
@@ -94,14 +94,15 @@ Then I created a reusable `.list` class that I applied to all of the lists (Prep
     }
 }
 
-/* It's also important to note that this is in my css-reset.css: */
+/* css-reset.css */
 ol,
 ul {
   list-style: none;
 }
 ```
 
-Next, for the ordered lists, I created a class called `.custom-ol` and used the `counter-reset` property to create a counter, the `counter-increment` property to increment it, and the `content` property to add a period after each number.
+For ordered lists, I created a class called `.custom-ol` and used the `counter-reset` and `counter-increment` properties to number each item uniquely. I also used the `content` property to append a period after each number.
+
 ```css
 .custom-ol {
     counter-reset: css-counter;
@@ -117,7 +118,7 @@ Next, for the ordered lists, I created a class called `.custom-ol` and used the 
 
 ```
 
-For the unordered lists, I changed the `content` to a bullet point and vertically aligned it to the center of each block of text. 
+For the unordered lists, I created a class called `.custom-ul`, and adjusted the  `content` to  property to display a bullet point. I also utilized Flexbox by adding  `align-items: center;` to ensure that the bullets were centered vertically to each block of text.
 
 ```css
 .custom-ul {
