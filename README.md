@@ -48,10 +48,9 @@ Ideas to test yourself:
 
 ### What I learned
 
-Through this project, I gained a lot of experience in creating customized list styles using CSS, and specifically by leveraging CSS counters for ordered lists. Since all of the lists in the project (Preparation time, Ingredients, and Instructions) had many properties in common (i.e. layout, size, padding, etc), I was able to structure the HTML lists uniformly and apply a custom, reusable class style to all lists. 
+Through this project, I gained a lot of experience in creating customized list styles using CSS, and specifically by leveraging CSS counters for ordered lists. 
 
-**Implementation of Custom List Styles**
-Since all of the lists in the project (Preparation time, Ingredients, and Instructions) had many properties in common (i.e. consistent typography, layout, size, padding, etc), I created a reusable class, `.list`, that I applied to all `<ol>` and `<ul>` list elements within the project.
+Since all of the lists in the project (Preparation time, Ingredients, and Instructions) had many properties in common (i.e. layout, size, padding, etc), I was able to structure the HTML lists uniformly and apply a custom, reusable class, `.list`, to all `<ol>` and `<ul>` list elements within the project.
 
 Here's how the HTML structure was standardized:
 
