@@ -1,233 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Recipe page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Recipe page</title>
 
     <!-- FONTS -->
- <!-- FONTS -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Young+Serif&display=swapdisplay=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS  -->
     <link rel="stylesheet" href="css-reset.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-</head>
-<body>
-  <main>
-    <article class="recipe-card-container">
-      <figure class="featured-image-container">
-        <img
-        class="featured-image"
-        src="assets/images/image-omelette.jpeg"
-        alt="Image of ommelette"
-       />
 
-      </figure>
+  <body>
+    <main>
+      <article class="recipe-card-container">
+        <!-- Featured Image -->
+        <figure class="featured-image-container">
+          <img
+            class="featured-image"
+            src="assets/images/image-omelette.jpg"
+            alt="Image of ommelette"
+          />
+        </figure>
 
+        <!-- Recipe Intro -->
         <div class="recipe-text-content-container">
           <section id="intro" class="m-b-400">
             <header class="text-preset-1 m-b-300">
               <h1 class="title">Simple Omelette Recipe</h1>
             </header>
             <div class="description text-preset-4">
-              An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-              to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+              An easy and quick dish, perfect for any meal. This classic
+              omelette combines beaten eggs cooked to perfection, optionally
+              filled with your choice of cheese, vegetables, or meats.
             </div>
           </section>
 
-          <section id="preparation-time" class="preparation-time-container m-b-400">
-            <header class="text-preset-3 m-b-300">
+          <!-- Preparation Time -->
+          <section class="preparation-time-container m-b-400">
+            <header class="text-preset-3 m-b-200">
               <h3 class="title">Preparation time</h3>
             </header>
-            <ul class="bullet-list">
+            <ul class="list custom-ul">
               <li class="list-item text-preset-4 m-b-100">
-                <div class="bullet-container">
-                  <div class="bullet"></div>
-                </div>
-                <div class="bullet-text">
+                <span>
                   <b class="bold">Total</b>: Approximately 10 minutes
-                </div>
+                </span>
               </li>
-              <li class="list-item text-preset-4 m-b-100">
-                <div class="bullet-container">
-                  <div class="bullet"></div>
-                </div>
-                <div class="bullet-text">
-                  <b class="bold">Preparation</b>: 5 minutes
-                </div>
+              <li class="text-preset-4 m-b-100">
+                <span> <b class="bold">Preparation</b>: 5 minutes </span>
               </li>
               <li class="list-item text-preset-4">
-                <div class="bullet-container">
-                  <div class="bullet"></div>
-                </div>
-                <div class="bullet-text">
-                  <b class="bold">Cooking</b>: 5 minutes
-                </div>
+                <span> <b class="bold">Cooking</b>: 5 minutes </span>
               </li>
             </ul>
           </section>
- 
-          <section id="ingredients" class="ingredients m-b-400">
+
+          <!-- Ingredients -->
+          <section class="ingredients m-b-400">
             <header class="text-preset-2 m-b-300">
               <h2 class="title">Ingredients</h2>
             </header>
-            <ul class="bullet-list">
-              <li class="list-item text-preset-4 m-b-100">
-                <div class="bullet-container">
-                  <div class="bullet"></div>
-                </div>
-                <div class="bullet-text">
-                  2-3 large eggs
-                </div>
+            <ul class="list custom-ul">
+              <li class="text-preset-4 m-b-100">
+                <span>2-3 large eggs</span>
               </li>
-              <li class="list-item text-preset-4 m-b-100">
-                <div class="bullet-container">
-                  <div class="bullet"></div>
-                </div>
-                <div class="bullet-text">
-                  Salt, to taste
-                </div>
+              <li class="text-preset-4 m-b-100">
+                <span>Salt, to taste</span>
               </li>
-              <li class="list-item text-preset-4 m-b-100">
-                <div class="bullet-container">
-                  <div class="bullet"></div>
-                </div>
-                <div class="bullet-text">
-                  Pepper, to taste
-                </div>
+              <li class="text-preset-4 m-b-100">
+                <span>Pepper, to taste</span>
               </li>
-              <li class="list-item text-preset-4 m-b-100">
-                <div class="bullet-container">
-                  <div class="bullet"></div>
-                </div>
-                <div class="bullet-text">
-                  1 tablespoon of butter or oil
-                </div>
+              <li class="text-preset-4 m-b-100">
+                <span>1 tablespoon of butter or oil</span>
               </li>
-              <li class="list-item text-preset-4">
-                <div class="bullet-container">
-                  <div class="bullet"></div>
-                </div>
-                <div class="bullet-text">
-                  Optional fillings: cheese, diced vegetables, cooked meats, herbs
-                </div>
+              <li class="text-preset-4">
+                <span
+                  >Optional fillings: cheese, diced vegetables, cooked
+                  meats,herbs</span
+                >
               </li>
             </ul>
           </section>
 
+          <div class="divider m-b-400"></div>
+
+          <!-- Instructions -->
+          <section class="instructions m-b-400">
+            <header class="text-preset-2 m-b-300">
+              <h2 class="title">Instructions</h2>
+            </header>
+            <ol class="numbered-list list custom-ol">
+              <li class="text-preset-4 m-b-100">
+                <span>
+                  <b class="bold">Beat the eggs: </b>
+                  In a bowl, beat the eggs with a pinch of salt and pepper until
+                  they are well mixed. You can add a tablespoon of water or milk
+                  for a fluffier texture.
+                </span>
+              </li>
+              <li class="text-preset-4 m-b-100">
+                <span>
+                  <b class="bold">Heat the pan: </b>
+                  Place a non-stick frying pan over medium heat and add butter
+                  or oil.
+                </span>
+              </li>
+              <li class="text-preset-4 m-b-100">
+                <span>
+                  <b class="bold">Cook the omelette: </b>
+                  Once the butter is melted and bubbling, pour in the eggs. Tilt
+                  the pan to ensure the eggs evenly coat the surface.
+                </span>
+              </li>
+              <li class="text-preset-4 m-b-100">
+                <span>
+                  <b class="bold">Add fillings (optional): </b>
+                  When the eggs begin to set at the edges but are still slightly
+                  runny in the middle, sprinkle your chosen fillings over one
+                  half of the omelette.
+                </span>
+              </li>
+              <li class="text-preset-4 m-b-100">
+                <span>
+                  <b class="bold">Fold and serve: </b>
+                  As the omelette continues to cook, carefully lift one edge and
+                  fold it over the fillings. Let it cook for another minute,
+                  then slide it onto a plate.
+                </span>
+              </li>
+              <li class="text-preset-4">
+                <span>
+                  <b class="bold">Enjoy: </b>
+                  Serve hot, with additional salt and pepper if needed.
+                </span>
+              </li>
+            </ol>
+          </section>
 
           <div class="divider m-b-400"></div>
 
-        <section id="instructions" class="ingredients m-b-400">
-          <header class="text-preset-2 m-b-300">
-            <h2 class="title">Instructions</h2>
-          </header>
-          <ol class="numbered-list">
+          <!-- Nutrition -->
+          <section class="nutrition">
+            <header class="text-preset-2 m-b-300">
+              <h2 class="title">Nutrition</h2>
+            </header>
+            <p class="text-preset-4 m-b-150">
+              The table below shows nutritional values per serving without the
+              additional fillings.
+            </p>
 
-            <li class="text-preset-4 m-b-100">
-              <span>  <b class="bold">Beat the eggs: </b>
-                In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-                You can add a tablespoon of water or milk for a fluffier texture.</span>
-            </li>
-
-            <li class="text-preset-4 m-b-100">
-              <span>   <b class="bold">Heat the pan: </b>
-                Place a non-stick frying pan over medium heat and add butter or oil.</span>
-            </li>
-
-            <li class="text-preset-4 m-b-100">
-              <span>   <b class="bold">Cook the omelette: </b>
-                Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-                the eggs evenly coat the surface.</span>
-            </li>
-
-            <li class="text-preset-4 m-b-100">
-              <span>   <b class="bold">Add fillings (optional): </b>
-                When the eggs begin to set at the edges but are still slightly runny in the 
-                middle, sprinkle your chosen fillings over one half of the omelette.</span>
-            </li>
-
-            <li class="text-preset-4 m-b-100">
-              <span>   <b class="bold">Fold and serve: </b>
-                As the omelette continues to cook, carefully lift one edge and fold it over the 
-                fillings. Let it cook for another minute, then slide it onto a plate.</span>
-            </li>
-
-            <li class="text-preset-4 m-b-100">
-              <span>   <b class="bold">Enjoy: </b>
-                
-                Serve hot, with additional salt and pepper if needed.</span>
-            </li>
-            
-            </ol>
-            </section>
-
-            <div class="divider m-b-400"></div>
-
-            <section id="nutrition" class="nutrition">
-              <header class="text-preset-2 m-b-300">
-                <h2 class="title">Nutrition</h2>
-              </header>
-              <p class="text-preset-4 m-b-150">  The table below shows nutritional values per serving without the additional fillings.</p>
-
-             <table class="nutrition-table text-preset-4">
-              <tr>
-                <td>Calories</td>
-                <td class="table-value bold">277kcal</td>
-              </tr>
-              <tr>
-                <td>Carbs</td>
-                <td class="table-value bold">0g</td>
-              </tr>
-              <tr>
-                <td>Protein</td>
-                <td class="table-value bold">20g</td>
-              </tr>
-              <tr>
-                <td>Fat</td>
-                <td class="table-value bold">22g</td>
-              </tr>
-             </table>
+            <div class="grid nutrition-table text-preset-4">
+              <div class="row">
+                <div class="grid-item label">Calories</div>
+                <div class="grid-item value bold">277kcal</div>
+              </div>
+              <div class="row">
+                <div class="grid-item label">Carbs</div>
+                <div class="grid-item value bold">0g</div>
+              </div>
+              <div class="row">
+                <div class="grid-item label">Protein</div>
+                <div class="grid-item value bold">20g</div>
+              </div>
+              <div class="row">
+                <div class="grid-item label">Fat</div>
+                <div class="grid-item value bold">22g</div>
+              </div>
+            </div>
           </section>
         </div>
+      </article>
+    </main>
 
-    </article>
-  </main>
-
-
-  
-
-
-
-
-  <!-- Nutrition
-
-  The table below shows nutritional values per serving without the additional fillings.
-
-  Calories
-  277kcal
-
-  Carbs
-  0g
-
-  Protein
-  20g
-
-  Fat
-  22g  -->
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
-  </footer>
-
-</body>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/cocoelizabeth"
+          >Coco ELizabeth</a
+        >.
+      </div>
+    </footer>
+  </body>
 </html>
