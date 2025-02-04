@@ -48,8 +48,49 @@ Ideas to test yourself:
 
 ### What I learned
 
-I learned how to create custom list styling and I learned how oto use CSS counters. I created a reusable class for the custom lists custom list style based on the figma design that allowed and I learned about the css-
+I learned how to create custom list styling for both ordered and unordered lists. I used CSS counters for the custom number styling. and I learned how to use CSS counters for creating custom. I created a reusable class for the custom lists custom list style based on the figma design that allowed and I learned about the css-
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+
+
+Since all of the bulleted lists and numbered lists in the design had similar spacing and layout, I was able to reuse the same `<li>` structure for each list item:
+
+```html
+<ul class="list custom-ul">
+  <li class="text-preset-4 m-b-100">
+    <span>List Item Text</span>
+  </li>
+
+  ...
+  
+</ul>
+```
+Then, I created a reusable
+I created a reusable `.list` class that I applied to all of the lists (Preparation time, Ingredients, and Instructions).
+```css
+.list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    li {
+        display: flex;
+        width: 100%;
+    }
+
+    li::before {
+        font-weight: bold;
+        color: var(--color-rose-800);
+        height: 100%;
+        min-width: var(--spacing-500);
+        padding-left: 8px;
+        padding-right: 8px;
+        box-sizing: border-box;
+    }
+}
+```
+
+Then, for the unordered lists with bullet points, I 
+First, I made a reusable `.list` class that could be applied to 
 
 To see how you can add code snippets, see below:
 

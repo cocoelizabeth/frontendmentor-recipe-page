@@ -153,7 +153,6 @@
     }
 
     li::before {
-        /* content: "•"; */
         font-weight: bold;
         color: var(--color-rose-800);
         height: 100%;
